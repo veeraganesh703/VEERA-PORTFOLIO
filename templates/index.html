@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Veera Ganesh | AI Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<style>
+
+/* ================= BACKGROUND ================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* glow */
+body::before, body::after {
+    content: "";
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+body::before {
+    width: 450px;
+    height: 450px;
+    background: #38bdf8;
+    top: 10%;
+    left: 15%;
+}
+
+body::after {
+    width: 350px;
+    height: 350px;
+    background: #0ea5e9;
+    bottom: 10%;
+    right: 10%;
+}
+
+/* ================= WRAPPER ================= */
+.wrapper {
+    display: flex;
+}
+
+/* ================= LEFT PANEL ================= */
+.left {
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(15px);
+    border-right: 1px solid rgba(56,189,248,0.3);
+    text-align: center;
+    padding: 25px;
+}
+
+.left img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* CONTACT */
+.contact-box {
+    background: rgba(56,189,248,0.08);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: left;
+    border: 1px solid rgba(56,189,248,0.2);
+}
+
+.contact-box a {
+    display: block;
+    margin: 8px 0;
+    color: #38bdf8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-box a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+/* ================= RIGHT PANEL ================= */
+.right {
+    margin-left: 25%;
+    padding: 30px;
+    width: 75%;
+}
+
+/* HERO */
+.hero {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(56,189,248,0.3);
+    box-shadow: 0 0 25px rgba(56,189,248,0.2);
+}
+
+.hero h1 {
+    color: #38bdf8;
+}
+
+/* SECTION TITLE */
+.section-title {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* CARD */
+.card-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(56,189,248,0.2);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(56,189,248,0.3);
+}
+
+/* ================= TOP SKILLS ================= */
+.skill-name {
+    margin-top: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 30px;
+    animation: grow 1.5s ease forwards;
+}
+
+@keyframes grow {
+    from { width: 0; }
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<!-- ================= LEFT ================= -->
+<div class="left">
+
+    <img src="/static/images/profile.jpeg">
+
+    <h3 style="color:#38bdf8;">Veera Ganesh</h3>
+
+    <p>Machine Learning Engineer</p>
+    <p>AI Developer</p>
+    <p>Flask Developer</p>
+
+    <div class="contact-box">
+        <h5 style="color:#38bdf8;">Contact</h5>
+
+        <p>📧 veeraganesh197@gmail.com</p>
+        <p>📞 9014135703</p>
+        <p>📍 Ameerpet, Hyderabad</p>
+
+        <a href="https://github.com/veeraganesh703" target="_blank">🔗 GitHub</a>
+        <a href="https://www.linkedin.com/in/veera-ganesh-309ba7309" target="_blank">💼 LinkedIn</a>
+    </div>
+
+</div>
+
+<!-- ================= RIGHT ================= -->
+<div class="right">
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Hi, I'm Veera Ganesh</h1>
+    <h3><span id="typed"></span></h3>
+    <p>AI Engineer building ML systems, Flask apps & intelligent solutions.</p>
+</div>
+
+<!-- OVERVIEW -->
+<div class="section-title">Overview</div>
+
+<div class="grid">
+<div class="card-box"><h2>2</h2><p>Projects</p></div>
+<div class="card-box"><h2>2</h2><p>Internships</p></div>
+<div class="card-box"><h2>8.02</h2><p>CGPA</p></div>
+<div class="card-box"><h2>8+</h2><p>Skills</p></div>
+</div>
+
+<!-- TOP SKILLS -->
+<div class="section-title">Top Skills</div>
+
+<div class="card-box">
+
+<div class="skill-name">Python <span>95%</span></div>
+<div class="bar"><div class="fill" style="width:95%; background:#38bdf8;"></div></div>
+
+<div class="skill-name">Machine Learning <span>95%</span></div>
+<div class="bar"><div class="fill" style="width:95%; background:#0ea5e9;"></div></div>
+
+<div class="skill-name">Deep Learning <span>90%</span></div>
+<div class="bar"><div class="fill" style="width:90%; background:#8b5cf6;"></div></div>
+
+<div class="skill-name">Flask <span>92%</span></div>
+<div class="bar"><div class="fill" style="width:92%; background:#10b981;"></div></div>
+
+<div class="skill-name">Scikit-learn <span>90%</span></div>
+<div class="bar"><div class="fill" style="width:90%; background:#f59e0b;"></div></div>
+
+<div class="skill-name">MySQL <span>85%</span></div>
+<div class="bar"><div class="fill" style="width:85%; background:#ef4444;"></div></div>
+
+<div class="skill-name">Render <span>85%</span></div>
+<div class="bar"><div class="fill" style="width:85%; background:#14b8a6;"></div></div>
+
+<div class="skill-name">Git & GitHub <span>90%</span></div>
+<div class="bar"><div class="fill" style="width:90%; background:#ec4899;"></div></div>
+
+</div>
+
+<!-- CORE TECH -->
+<div class="section-title">Core Technologies</div>
+
+<div class="card-box">
+<span class="badge bg-primary m-1">Regression</span>
+<span class="badge bg-info text-dark m-1">Classification</span>
+<span class="badge bg-success m-1">Clustering</span>
+<span class="badge bg-warning text-dark m-1">Feature Engineering</span>
+<span class="badge bg-danger m-1">ANN</span>
+<span class="badge bg-secondary m-1">CNN</span>
+<span class="badge bg-primary m-1">RNN</span>
+<span class="badge bg-success m-1">Pandas</span>
+<span class="badge bg-info text-dark m-1">NumPy</span>
+<span class="badge bg-warning text-dark m-1">Matplotlib</span>
+</div>
+
+<!-- EDUCATION -->
+<div class="section-title">Education</div>
+
+<div class="grid">
+<div class="card-box">
+<h4>B.Tech AI & DS</h4>
+<p>2022 - 2026</p>
+<p>CGPA: 8.02</p>
+</div>
+
+<div class="card-box">
+<h4>Intermediate</h4>
+<p>87.8%</p>
+</div>
+
+<div class="card-box">
+<h4>SSC</h4>
+<p>CGPA: 10</p>
+</div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section-title">Projects</div>
+
+<div class="grid">
+
+<div class="card-box">
+<h4>AI Resume Analyzer</h4>
+<p>ATS Score + OpenAI + PDF Reports</p>
+<a href="https://ats-resume-score-checker-2ujt.onrender.com" target="_blank">
+<button>Live Project</button>
+</a>
+</div>
+
+<div class="card-box">
+<h4>Drone Detection System</h4>
+<p>OpenCV + Image Processing + ML</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<script>
+var typed = new Typed("#typed", {
+    strings: [
+        "Machine Learning Engineer",
+        "AI Developer",
+        "Flask Developer",
+        "Python Developer"
+    ],
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true
+});
+</script>
+
+</body>
+</html>
